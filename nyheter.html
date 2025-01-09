@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swedish for all</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Länk till extern CSS -->
+    <link rel="icon" href="images/logo.JPG" type="image/x-icon"> <!-- Favicon -->
+</head>
+<body>
+    <header>
+        <nav id="main-nav"> <!-- Navigationsmeny -->
+            <div class="menu-icon" id="menu-toggle"> <!-- Hamburgarmeny -->
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+            <ul id="menu"> <!-- Menyalternativ -->
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkter.html">Kurser</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="nyheter.html" class="active">Nyheter</a></li> <!-- Aktiv sida markerad -->
+            </ul>
+    
+            <div class="logo"> <!-- Logotyp -->
+                <a href="index.html">
+                    <img src="images/logo.JPG" alt="Logotyp för [Lärarens namn] Svenska Kurser" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nyheter och Kommande Kurser</h1> <!-- Huvudrubrik -->
+        <section class="news-grid"> <!-- Grid för nyhetsartiklar -->
+            <article class="news-item"> <!-- Enskild artikel -->
+                <h2>Ny Gruppkurs för Nybörjare - Startar 1 Februari!</h2>
+                <p><strong>Datum:</strong> 1 februari 2025</p>
+                <p><strong>Beskrivning:</strong> En ny gruppkurs för nybörjare startar den 1 februari! Kursen kommer att hållas varje tisdag från 18:00 till 19:30 och fokuserar på grundläggande språkkunskaper.</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>
+    
+            <!-- Fler artiklar -->
+            <article class="news-item">
+                <h2>Privatlektioner Tillgängliga för Flexibla Tider</h2>
+                <p><strong>Beskrivning:</strong> Privatlektioner är nu tillgängliga för alla nivåer, och tider kan anpassas efter dina behov. Boka din privatlektion redan idag!</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>
+    
+            <article class="news-item">
+                <h2>Sommarkurs för Avancerade Studenter - 10 Juni</h2>
+                <p><strong>Datum:</strong> 10 juni 2025</p>
+                <p><strong>Beskrivning:</strong> För avancerade studenter erbjuder vi en sommarkurs som fokuserar på svenska för professionella och akademiska sammanhang. Kursen hålls i 4 veckor och fokuserar på både skriftlig och muntlig kommunikation.</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>
+            <article class="news-item">
+                <h2>Sommarkurs för Avancerade Studenter - 10 Juni</h2>
+                <p><strong>Datum:</strong> 10 juni 2025</p>
+                <p><strong>Beskrivning:</strong> För avancerade studenter erbjuder vi en sommarkurs som fokuserar på svenska för professionella och akademiska sammanhang. Kursen hålls i 4 veckor och fokuserar på både skriftlig och muntlig kommunikation.</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>            <article class="news-item">
+                <h2>Sommarkurs för Avancerade Studenter - 10 Juni</h2>
+                <p><strong>Datum:</strong> 10 juni 2025</p>
+                <p><strong>Beskrivning:</strong> För avancerade studenter erbjuder vi en sommarkurs som fokuserar på svenska för professionella och akademiska sammanhang. Kursen hålls i 4 veckor och fokuserar på både skriftlig och muntlig kommunikation.</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>            <article class="news-item">
+                <h2>Sommarkurs för Avancerade Studenter - 10 Juni</h2>
+                <p><strong>Datum:</strong> 10 juni 2025</p>
+                <p><strong>Beskrivning:</strong> För avancerade studenter erbjuder vi en sommarkurs som fokuserar på svenska för professionella och akademiska sammanhang. Kursen hålls i 4 veckor och fokuserar på både skriftlig och muntlig kommunikation.</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>            <article class="news-item">
+                <h2>Sommarkurs för Avancerade Studenter - 10 Juni</h2>
+                <p><strong>Datum:</strong> 10 juni 2025</p>
+                <p><strong>Beskrivning:</strong> För avancerade studenter erbjuder vi en sommarkurs som fokuserar på svenska för professionella och akademiska sammanhang. Kursen hålls i 4 veckor och fokuserar på både skriftlig och muntlig kommunikation.</p>
+                <img src="images/svenska.jpg" alt="Gruppkurs för Nybörjare" class="news-image">
+            </article>
+            
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Swedish.for.all. Alla rättigheter förbehållna.</p> <!-- Sidfot -->
+    </footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show'); // Växla visning av menyn
+    });
+</script>
+</body>
+</html>

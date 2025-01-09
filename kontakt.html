@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swedish for all</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Länk till extern CSS -->
+    <link rel="icon" href="images/logo.JPG" type="image/x-icon"> <!-- Favicon -->
+</head>
+<body>
+    <header>
+        <nav id="main-nav"> <!-- Navigationsmeny -->
+            <div class="menu-icon" id="menu-toggle"> <!-- Hamburgarmeny -->
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+            <ul id="menu"> <!-- Menyalternativ -->
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkter.html">Kurser</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li> <!-- Aktiv sida markerad -->
+                <li><a href="nyheter.html">Nyheter</a></li>
+            </ul>
+    
+            <div class="logo"> <!-- Logotyp -->
+                <a href="index.html">
+                    <img src="images/logo.JPG" alt="Logotyp för [Lärarens namn] Svenska Kurser" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero-image"> <!-- Sektion för hero-bild -->
+        <img src="images/sprak.png" alt="Språkkurs" class="hero-img"> <!-- Hero-bild -->
+        <div class="hero-text"> <!-- Text ovanpå bilden -->
+            <h1>Kontakta Mig</h1>
+            <p>Har du frågor eller vill boka en kurs? Fyll i formuläret nedan så återkommer jag så snart som möjligt.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="form-container"> <!-- Formulärbehållare -->
+            <h2>Fyll i formuläret</h2>
+            <form action="mailto:lärarens-email@example.com" method="post" enctype="text/plain"> <!-- Formulär -->
+                <div class="form-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" placeholder="Namn" style="font-style: italic;" required> <!-- Namnfält -->
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Ämne:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Ämne" style="font-style: italic;" required> <!-- Ämnesfält -->
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-postadress:</label>
+                    <input type="email" id="email" name="email" placeholder="E-postadress" style="font-style: italic;" required> <!-- E-postfält -->
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här..." style="font-style: italic;" required></textarea> <!-- Textfält -->
+                </div>
+
+                <button type="submit" class="submit-btn">Skicka</button> <!-- Skicka-knapp -->
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Swedish.for.all. Alla rättigheter förbehållna.</p> <!-- Copyright -->
+    </footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show'); // Växla visning av menyn
+    });
+</script>
+</body>
+</html>

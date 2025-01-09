@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swedish for all</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Länk till extern CSS -->
+    <link rel="icon" href="images/logo.JPG" type="image/x-icon"> <!-- Favicon -->
+</head>
+<body>
+    <header>
+        <nav id="main-nav"> <!-- Huvudnavigering -->
+            <div class="menu-icon" id="menu-toggle"> <!-- Hamburgarmeny för små enheter -->
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+            <ul id="menu"> <!-- Navigeringsmeny -->
+                <li><a href="index.html" class="active">Hem</a></li> <!-- Aktiv sida markerad -->
+                <li><a href="produkter.html">Kurser</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="nyheter.html">Nyheter</a></li>
+            </ul>
+    
+            <div class="logo"> <!-- Logotyp -->
+                <a href="index.html">
+                    <img src="images/logo.JPG" alt="Logotyp för [Lärarens namn] Svenska Kurser" />
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="intro"> <!-- Hero-image -->
+            <div class="image-container">
+                <img class="image" src="./images/minbild.jpg" alt="Min bild"> <!-- Bild -->
+            </div>
+        </section>
+        <div class="textbox"> <!-- Textinnehåll -->
+            <section class="content">
+                <h2>Välkommen till min hemsida</h2>
+                <p>Här får du reda på mer om kurser och undervisning.</p>
+            </section>
+            
+            <section class="next-section">
+                <h2>Om mig</h2>
+                <p>Här kan du läsa om min bakgrund och erfarenhet som lärare.</p>
+            </section>
+            
+            <section class="last-section">
+                <h2>Kurser</h2>
+                <p>Följande kurser erbjuds just nu...</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Swedish.for.all. Alla rättigheter förbehållna.</p> <!-- Copyright -->
+    </footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle'); // Hamburger meny
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show'); // Växla visning
+    });
+</script>
+</body>
+</html>
